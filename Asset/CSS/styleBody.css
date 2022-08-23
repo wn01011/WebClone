@@ -13,7 +13,7 @@
 .img_1 {
   width: var(--fWidth);
   margin: auto;
-  height: 75%;
+  height: auto;
 }
 .img_base div {
   font-size: 8rem;
@@ -24,29 +24,29 @@
   margin-left: 2%;
   display: flex;
   width: 100%;
-  height: 70%;
+  height: auto;
 }
 .img_2 {
   margin-right: var(--margin);
   width: 35%;
-  height: 100%;
+  height: auto;
 }
 .img_3 {
   margin-left: var(--margin);
   width: 60%;
-  height: 100%;
+  height: auto;
 }
 .img_4 {
   margin-top: var(--margin);
   margin-left: 2%;
   width: var(--fWidth);
-  height: 50%;
+  height: auto;
 }
 .img_5 {
   margin-top: var(--margin);
   margin-left: 2%;
   width: var(--fWidth);
-  height: 100%;
+  height: auto;
 }
 .text {
   width: 96%;
@@ -63,4 +63,9 @@
 }
 .text_2 span {
   color: var(--darkLetter);
+}
+video{
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 30px;
 }

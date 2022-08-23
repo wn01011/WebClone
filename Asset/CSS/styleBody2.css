@@ -1,1 +1,27 @@
-
+.animatedText {
+    display:flex;
+    align-items: center;
+    width:100%; 
+    max-width: 100%; 
+    height:auto;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    color:var(--letter);
+    font-size: 6rem;
+}
+.animatedText .track {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    from {transform: translateX(0);}
+    to {transform:translateX(-50%);}
+}
+@media (hover:hover) and (min-width: 700px){
+    .animated-title .content {
+        -webkit-transform: translateY(calc(100% - 8rem));
+        transform:translateY(calc(100% - 8rem));
+    }
+}
