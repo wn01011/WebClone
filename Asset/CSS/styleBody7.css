@@ -1,0 +1,36 @@
+.img_content1_styleBody7,
+.img_content2_styleBody7 {
+  position: relative;
+}
+.img_content2_styleBody7 {
+  margin-top: var(--margin);
+}
+.img_content1_styleBody7 img,
+.img_content2_styleBody7 img {
+  margin-left: 2%;
+  width: var(--fWidth);
+  height: auto;
+  border-radius: 30px;
+}
+.img_content1_styleBody7 div {
+  top: 12%;
+}
+.img_content2_styleBody7 div {
+  top: 20%;
+}
+.img_content1_styleBody7 div,
+.img_content2_styleBody7 div {
+  position: absolute;
+  color: gray;
+  height: 83%;
+  font-size: 2rem;
+  padding-left: 5%;
+  line-height: 180%;
+  letter-spacing: 1rem;
+  overflow-y: hidden;
+}
+.img_content1_styleBody7 div span,
+.img_content2_styleBody7 div span {
+  color: var(--letter);
+  font-size: 4rem;
+}

@@ -1,42 +1,41 @@
 .img_container {
-    display:flex;
-    width:var(--fWidth);
-    height:auto;
-    margin-left:2%;
+  display: flex;
+  width: var(--fWidth);
+  height: auto;
+  margin-left: 2%;
 }
-.img_container img{
-    width: 100%;
-    border-radius: 30px;
-    height:inherit;
-    float:none;
+.img_container img {
+  width: 100%;
+  border-radius: 30px;
+  height: inherit;
+  float: none;
 }
 .img_container .img_content1,
 .img_container .img_content2,
-.img_container .img_content3{
-    width:33.33%;
-    padding: var(--margin);
-    position:relative;
+.img_container .img_content3 {
+  width: 33.33%;
+  padding: var(--margin);
+  position: relative;
 }
 
 .img_container .img_content1 div,
 .img_container .img_content2 div,
-.img_container .img_content3 div{
-    position:absolute;
-    text-align: left;
-    width: 100%;
-    height:inherit;
-    padding-left:10%;
-    padding-right:10%;
+.img_container .img_content3 div {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  height: inherit;
+  padding-left: 10%;
+  padding-right: 10%;
 
-    bottom:5%;
-    white-space: nowrap;
-    color:gray;
-    font-size:1.2rem;
+  bottom: 5%;
+  color: gray;
+  font-size: 2rem;
 }
 .img_container .img_content1 div span,
 .img_container .img_content2 div span,
-.img_container .img_content3 div span{
-    color:var(--letter);
-    white-space: normal;
-    /* 여기서 white-space가 안먹는 이유?? */
+.img_container .img_content3 div span {
+  max-width: inherit;
+  color: var(--letter);
 }

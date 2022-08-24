@@ -1,0 +1,33 @@
+.text_contents_styleBody10 {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid white;
+  color: var(--letter);
+  font-size: 2rem;
+  padding-left: 3%;
+  justify-content: center;
+  padding-top: calc(2 * var(--margin));
+  padding-bottom: calc(2 * var(--margin));
+}
+.text_contents_styleBody10:hover {
+  background-color: white;
+}
+.text_contents_styleBody10 .content_L {
+  color: gray;
+  width: 20%;
+}
+.text_contents_styleBody10 .content_R {
+  color: var(--letter);
+  width: 80%;
+  line-height: 120%;
+}
+.text_contents_styleBody10:hover .content_R {
+  color: var(--black);
+}
+.text_contents_styleBody10 .content_R a {
+  color: gray;
+  text-decoration: underline;
+}
+.text_contents_styleBody10 .content_R a:hover {
+  cursor: no-drop;
+}
