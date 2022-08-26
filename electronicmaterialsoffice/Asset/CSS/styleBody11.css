@@ -1,0 +1,101 @@
+.img_white_styleBody11 {
+  margin-top: 3%;
+  padding-left: 2%;
+  width: var(--fWidth);
+}
+.img_white_styleBody11 div {
+  background-color: white;
+  border-radius: 30px;
+}
+.img_white_styleBody11 div img {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.waitlist-container {
+  display: flex;
+}
+.waitlist-text-container {
+  display: flex;
+  flex-direction: column;
+}
+.waitlist-container .waitlist-text1 {
+  font-size: 4rem;
+  text-align: left;
+  height: 30%;
+  padding-left: 2%;
+}
+.waitlist-container .waitlist-text2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  width: 80%;
+  height: 40%;
+  min-width: 390px;
+  padding-bottom: 5%;
+  padding-left: 2%;
+}
+.waitlist-container .waitlist-address {
+  margin-top: 5%;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding-bottom: 2%;
+}
+
+.waitlist-container input {
+  display: inline-block;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  height: 100%;
+}
+.waitlist-container input::placeholder {
+  padding: 5%;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.waitlist-container input:focus,
+.waitlist-container input:active {
+  border: none;
+}
+.addressBtn {
+  position: relative;
+  left: -10px;
+  width: 15%;
+  height: auto;
+  background-color: coral;
+  display: inline;
+  border-radius: 10px;
+}
+.addressBtn::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+@media screen and (max-width: 760px) {
+  .waitlist-container {
+    flex-direction: column;
+  }
+  .waitlist-container img {
+    height: 50%;
+  }
+  .addressBtn {
+    width: 10%;
+    height: auto;
+    background-color: coral;
+  }
+  .waitlist-address {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .img_white_styleBody11 div img {
+    height: auto;
+    width: 100%;
+  }
+  .waitlist-container .waitlist-text2 {
+    padding: 0;
+  }
+}

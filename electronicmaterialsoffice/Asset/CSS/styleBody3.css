@@ -39,3 +39,13 @@
   max-width: inherit;
   color: var(--letter);
 }
+@media screen and (max-width: 760px) {
+  .img_container {
+    flex-direction: column;
+  }
+  .img_container .img_content1,
+  .img_container .img_content2,
+  .img_container .img_content3 {
+    width: 100%;
+  }
+}

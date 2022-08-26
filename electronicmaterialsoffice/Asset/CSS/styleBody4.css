@@ -1,5 +1,6 @@
 .img_container_styleBody4 {
   display: flex;
+  flex-wrap: wrap;
   width: var(--fWidth);
   height: auto;
   margin-left: 2%;
@@ -56,4 +57,14 @@
 }
 .horiItem div span {
   color: var(--letter);
+}
+@media screen and (max-width: 760px) {
+  .img_container_styleBody4 {
+    flex-direction: column;
+  }
+  .img_container_styleBody4 .img_content1_styleBody4,
+  .img_container_styleBody4 .img_content2_styleBody4,
+  .img_container_styleBody4 .img_content3_styleBody4 {
+    width: 100%;
+  }
 }
