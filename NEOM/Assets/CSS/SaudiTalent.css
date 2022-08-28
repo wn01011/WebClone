@@ -12,6 +12,12 @@
     flex-direction: column;
     gap: 40px;
     color:aliceblue;
+    animation-name:saudi-Anim;
+    animation-duration: 1s;
+    animation-delay:0.2s;
+    opacity: 0;
+    transform:translateY(100px);
+    animation-fill-mode: forwards;
 }
 .saudiL p{
     width:80%;
@@ -63,6 +69,12 @@
 }
 .saudiR{
     width:50%;
+    animation-name:saudi-Anim;
+    animation-duration: 1s;
+    animation-delay:0.5s;
+    opacity: 0;
+    transform:translateY(100px);
+    animation-fill-mode: forwards;
 }
 .saudiR img{
     width:100%;
@@ -77,5 +89,14 @@
     .saudi .saudiR{
         width: 100%;
     }
-
+}
+@keyframes saudi-Anim {
+    from{
+      opacity: 0;
+      transform:translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform:translateY(0px);
+    }
 }

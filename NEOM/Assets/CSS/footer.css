@@ -49,10 +49,17 @@ hr{
     gap:40px;
     padding : 80px 60px;
     color:aliceblue;
+    animation-name:footer-Anim;
+    animation-duration: 1s;
+    animation-delay:0.5s;
+    opacity: 0;
+    transform:translateX(100px);
+    animation-fill-mode: forwards;
 }
 .about li{
     list-style: none;
     font-weight:200;
+    
 }
 .about ul{
     gap: 20px;
@@ -180,4 +187,14 @@ hr{
         justify-content: space-between;
     }
     
+}
+@keyframes footer-Anim {
+    from{
+      opacity: 0;
+      transform:translateX(100px);
+    }
+    to{
+      opacity: 1;
+      transform:translateX(0px);
+    }
 }

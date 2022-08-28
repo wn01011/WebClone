@@ -29,7 +29,8 @@
   transition:color 1s;
   text-decoration: none;
 }
-.menu .menu-content a:visited{
+.menu .menu-content a:visited,
+.menu .menu-content a:link{
   color: rgb(209, 209, 209);
 }
 .menu .menu-content a:hover {

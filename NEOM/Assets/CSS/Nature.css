@@ -3,7 +3,7 @@
     width:100%;
 }
 .nature .background{
-    background-image: url(/Assets/Image/nature.jpg);
+    background-image: url(../Image/nature.jpg);
     height:100%;
     object-fit:contain;
     position: absolute;
@@ -27,7 +27,21 @@
     gap: 40px;
     color:white;
     min-height:600px;
+    animation-name:nature-Anim;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
+@keyframes nature-Anim {
+    from{
+      opacity: 0;
+      transform:translateY(100px);
+    }
+    to{
+      opacity: 1;
+      transform:translateY(0px);
+    }
+  }
 .nature-contents h3{
     font-size:0.9rem;
     letter-spacing: 0.1rem;
