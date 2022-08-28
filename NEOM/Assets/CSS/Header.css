@@ -8,7 +8,7 @@
   height: 140px;
   background-color: transparent;
   border-bottom: 1px whitesmoke;
-  color: whitesmoke;
+  color: rgb(209, 209, 209);
   border-bottom: 1px solid rgba(245, 245, 245, 0.274);
   z-index: 100;
 }
@@ -23,6 +23,17 @@
 }
 .menu .menu-content {
   margin: 30px;
+  
+}
+.menu .menu-content a{
+  transition:color 1s;
+  text-decoration: none;
+}
+.menu .menu-content a:visited{
+  color: rgb(209, 209, 209);
+}
+.menu .menu-content a:hover {
+  color: white;
 }
 .head-container .header-btn {
   border: none;
@@ -51,7 +62,7 @@
   min-width: 50px;
   border: none;
   background-color: transparent;
-  color: whitesmoke;
+  color: rgb(209, 209, 209);
 }
 .head-container .head-language img {
   width: 20px;

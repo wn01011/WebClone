@@ -1,0 +1,15 @@
+.policy-btn{
+    background: rgba(233, 233, 233, 0.082);
+    position:fixed;
+    bottom: 15px;
+    left:15px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: none;
+    color:aliceblue;
+    transition: background-color 0.3s;
+}
+.policy-btn:hover{
+    background-color:#a88a27;
+}

@@ -3,7 +3,8 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  opacity: 0.5;
+  opacity: 1;
+  filter:brightness(70%);
 }
 .main-video {
   display: flex;
@@ -18,18 +19,98 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 40px;
+
 }
 .videoR {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  padding-right: 80px;
+  padding-right: 40px;
 }
-.videoR .videoBtn {
-  width: 80px;
-  height: 80px;
+.videoR .videoBtn,
+.videoL .videoBtn {
+  width: 60px;
+  height: 60px;
   background-color: transparent;
   border-radius: 50%;
+  color:  white;
+  border-color: white;
+  z-index: 100;
+  transition: border, background-color 0.4s;
+}
+.videoR .videoBtn:hover,
+.videoL .videoBtn:hover{
+  border:none;
+  background-color: #ebc038;
+}
+.video-title{
+  position:absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  bottom : 0px;
+  padding: 60px;
+  padding-left: 100px;
+  width: 100%;
+  height: 100%;
+  min-height: 457px;
+  line-height: 200%;
+  color:white;
+  letter-spacing: 0.5rem;
+  gap: 60px;
+}
+.video-title h2{
+  height: 20%;
+  font-size: clamp(28px,calc(28px + 22*(100vw - 480px)/960),50px);
+  line-height: clamp(143%,calc(143% + -23*(100vw - 480px)/960),120%);
+}
+.video-title-button{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.video-title-button button{
+  border:none;
+  background-color:white;
+  border-radius:50%;
+  transition:background-color 0.4s;
+}
+
+.video-title-button .video-title-buttonL{
+  min-width:60px;
+  width: 60px;
+  height: 60px;
+}
+.video-title-button .video-title-buttonR{
+  min-width:180px;
+  width: 180px;
+  height: 60px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+.video-title-button button:hover{
+  background-color: #ebc038;
+  color:white;
+}
+
+@media only screen and (max-width: 767px){
+  .videoR .videoBtn,
+  .videoL .videoBtn{
+    display:none;
+  }
+  .video-title-button .video-title-buttonR{
+    width : calc(100% - 60px);
+  }
+}
+@media only screen and (max-width: 380px){
+  .video-title-button {
+    flex-direction: column;
+  }
+  .video-title-button .video-title-buttonR{
+    width: 100%;
+  }
 }

@@ -1,0 +1,81 @@
+.saudi{
+    display:flex;
+    position:relative;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 60px 120px;
+    gap:60px;
+}
+.saudiL{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    color:aliceblue;
+}
+.saudiL p{
+    width:80%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight:200;
+}
+.saudiL p u{
+    color:#a88a27;
+    font-weight:800;
+}
+.saudi-button{
+    min-width: 250px;
+}
+.saudi-button .saudi-buttonL{
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    background-color:whitesmoke;
+    transition:background-color 0.5s;
+    border:none;
+    font-weight:bolder;
+    color:rgb(37, 37, 37);
+    margin-right:20px;
+}
+.saudi-button .saudi-buttonR{
+    border-radius:30px;
+    width: 160px;
+    height: 60px;
+    background-color:whitesmoke;
+    transition:background-color 0.5s;
+    border:none;
+    color:rgb(37, 37, 37);
+    margin-bottom: 40px;
+}
+.saudi-button button:hover{
+    background-color:#a88a27;
+    color:whitesmoke;
+}
+.saudi-button .saudi-buttonR p{
+    width:100%;
+    text-align: center;
+    font-size:0.7rem;
+    font-weight:bolder;
+}
+.saudiL h1{
+    width: 50%;
+    font-size: 1.8rem;
+}
+.saudiR{
+    width:50%;
+}
+.saudiR img{
+    width:100%;
+}
+@media only screen and (max-width:768px) {
+    .saudi{
+        flex-direction: column;
+        padding: 40px 20px;
+        gap:20px;
+    }
+    .saudi .saudiL,
+    .saudi .saudiR{
+        width: 100%;
+    }
+
+}

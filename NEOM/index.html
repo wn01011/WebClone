@@ -4,8 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/CSS/Header.css" />
-    <link rel="stylesheet" href="./Assets/CSS/body.css" />
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
     <link rel="stylesheet" href="./Assets/CSS/MainVideo.css" />
+    <link rel="stylesheet" href="./Assets/CSS/intro.css" />
+    <link rel="stylesheet" href="./Assets/CSS/Nature.css" />
+    <link rel="stylesheet" href="./Assets/CSS/thanksgiving.css" />
+    <link rel="stylesheet" href="./Assets/CSS/brand_partners.css" />
+    <link rel="stylesheet" href="./Assets/CSS/directors.css" />
+    <link rel="stylesheet" href="./Assets/CSS/SaudiTalent.css" />
+    <link rel="stylesheet" href="./Assets/CSS/footer.css" />
+    <link rel="stylesheet" href="./Assets/CSS/etc.css" />
     <script
       src="https://kit.fontawesome.com/0c7c810305.js"
       crossorigin="anonymous"
@@ -13,44 +21,256 @@
     <title>NeomClone</title>
   </head>
   <body>
-    <header>
-      <div class="head-container">
-        <button class="header-btn">
-          <img class="img1" src="./Assets/Image/logo-neom.webp" alt="" />
-          <img class="img2" src="./Assets/Image/Logo.png" alt="" />
-        </button>
 
-        <ul class="menu">
-          <li class="menu-content">ABOUT</li>
-          <li class="menu-content">REGIONS</li>
-          <li class="menu-content">SECTORS</li>
-          <li class="menu-content">NEWS</li>
-          <li class="menu-content">PARTNERS</li>
-          <li class="menu-content">INVEST</li>
-          <li class="menu-content">SUPPLIERS</li>
-          <li class="menu-content">CAREERS</li>
-        </ul>
-        <button class="head-language">
-          <span>EN&nbsp;</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <button class="hamberger">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </button>
-      </div>
+    <header class="head-container">
+      <button class="header-btn">
+        <img class="img1" src="./Assets/Image/logo-neom.webp" alt="" />
+        <img class="img2" src="./Assets/Image/Logo.png" alt="" />
+      </button>
+
+      <ul class="menu">
+        <li class="menu-content"><a href="#">ABOUT</a></li>
+        <li class="menu-content"><a href="#">REGIONS</a></li>
+        <li class="menu-content"><a href="#">SECTORS</a></li>
+        <li class="menu-content"><a href="#">NEWS</a></li>
+        <li class="menu-content"><a href="#">PARTNERS</a></li>
+        <li class="menu-content"><a href="#">INVEST</a></li>
+        <li class="menu-content"><a href="#">SUPPLIERS</a></li>
+        <li class="menu-content"><a href="#">CAREERS</a></li>
+      </ul>
+
+      <button class="head-language">
+        <span>EN&nbsp;</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <button class="hamberger">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+    </header>
+
+    <main>
+
       <article class="main-video">
         <video src="./Assets/Video/forest.mp4" autoplay muted loop></video>
         <section class="videoL">
           <button class="videoBtn">
-            <i class="fa-solid fa-arrow-left fa-4x"></i>
+            <i class="fa-solid fa-arrow-left fa-1x"></i>
           </button>
+
         </section>
         <section class="videoR">
           <button class="videoBtn">
-            <i class="fa-solid fa-arrow-right fa-4x"></i>
+            <i class="fa-solid fa-arrow-right fa-1x"></i>
           </button>
         </section>
+        <div class="video-title">
+          <h2>OXAGON<br />HACKATHON</h2>
+          <div class="video-title-button">
+            <button class="video-title-buttonL"><i class="fa-solid fa-play"></i></button>
+            <button class="video-title-buttonR"><p>LEARN MORE</p></button>
+          </div>
+        </div>
       </article>
-    </header>
+
+      <article class="intro">
+        <h1 class="intro-title"><p class="intro-text1">WHAT'S HAPPENING</p><p class="intro-text2">AT NEOM</p></h1>
+        <section class="intro-imgs">
+          <div class="intro-imgsL">
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img1.webp" alt="">
+              <p>OXAGON announces hackathon, partnering with the Ministry of Education</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img2.webp" alt="">
+              <p>Public exhibition to share detailed design of THE LINE</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+              <a href="#" class="read-more"></a>
+            </div>
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img3.webp" alt="">
+              <p>Designs announced for THE LINE, the city of the future</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+              <a href="#" class="read-more"></a>
+            </div>
+          </div>
+          <div class="intro-imgsR">
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img4.webp" alt="">
+              <p>NEOM's ENOWA to boost Extreme E with green hydrogen power</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+              <a href="#" class="read-more"></a>
+            </div>
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img5.webp" alt="">
+              <p>NEOM and McLaren Racing announce strategic title partnership</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+              <a href="#" class="read-more"></a>
+            </div>
+            <div class="intro-imgs-img">
+              <img src="./Assets/Image/Img6.webp" alt="">
+              <p>NEOM's Shuhub program to develop the next generation's football talent</p>
+              <a href="#" class="read-more">read more <i class="fa-solid fa-right-long"></i></a>
+              <a href="#" class="read-more"></a>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="nature">
+        <div class="background"></div>
+        <section class="nature-contents">
+          <h3>NATURE</h3>
+          <h1>A NEW MODEL FOR PROTECTION,<br /> PRESERVATION & REGENERATION</h1>
+          <p>Residents, tourists and wildlife will benefit from our regreening and rewilding model-with 95% of our land committed to the natural world.</p>
+          <div class="nature-title-button">
+            <button class="nature-title-buttonL"><i class="fa-solid fa-play fa-lg"></i></button>
+            <button class="nature-title-buttonR"><p>LEARN MORE</p></button>
+          </div>
+        </section>
+      </article>
+
+      <article class="thanks-giving">
+        <img src="./Assets/Image/Logo.png" alt="">
+        <p>"If we are to solve the challenges of tomorrow, we must face up to them today, no matter how difficult they may seem. At NEOM, we are addressing some of the most pressing challenges facing humanity by bringing together a community of the brightest minds committed to reimagining what a sustainable future will look like in 20 to 30 years, and building it today. We are redefining the future now. NEOM is open for business."</p>
+        <p>NEOM Chief Executive Officer</p>
+        <p>Nadhmi Al-Nasr</p>
+      </article>
+
+      <article class="brand-partners">
+        <div class="brand-title">BRAND PARTNERS</div>
+        <ul>
+          <li><img src="./Assets/Image/partner1.png" alt=""></li>
+          <li><img src="./Assets/Image/partner2.png" alt=""></li>
+          <li><img src="./Assets/Image/partner3.png" alt=""></li>
+          <li><img src="./Assets/Image/partner4.png" alt=""></li>
+        </ul>
+      </article>
+
+      <article class="directors">
+        <span></span>
+          <section class="director-header">
+            <div class="director-textL"><h3>Giovanna Carnevali</h3><p>Urban Planning Executive Director</p></div>
+            <div class="director-textR"><h3>Gavin van Tonder</h3><p>Head of Water</p></div>
+          </section>
+          <section class="director-main">
+            <div class="directorL">
+              <img src="./Assets/Image/directorL.webp" alt="">
+              <button><i class="fa-solid fa-left-long fa-2x"></i></button>
+            </div>
+            <div class="directorM">
+              <img src="./Assets/Image/director1.webp" alt="">
+              <h2 class="description"><i class="fa-solid fa-quote-left fa-4x"></i><br /><br />
+              NEOM is not about building a smart city, 
+              it is about building the first cognitive city, 
+              where world-class technology is fueled with data 
+              and intelligence to interact seamlessly with its population.
+              <br /><br />
+              <p>Joseph Bradley</p>
+              <p>NEOM Technology & Digital CEO</p>
+              <br />
+              <button>WATCH&nbsp;&nbsp;<i class="fa-solid fa-play"></i></button>
+              </h2>
+              
+            </div>
+            <div class="directorR">
+              <img src="./Assets/Image/directorR.webp" alt="">
+              <button><i class="fa-solid fa-right-long fa-2x"></i></button>
+            </div>
+          </section>
+      </article>
+
+      <article class="saudi">
+        <section class="saudiL">
+          <h1>UNLOCKING SAUDI TALENT OF THE FUTURE</h1>
+          <p>NEOM is a passionate advocate for the next generation of talented leaders now emerging in Saudi Arabia. That is why we have invested heavily in our Graduates Opportunities in Work (GrOW) program, which is helping to accelerate careers at scale. Applications for the 2022 cohort are now closed. Keep an eye on <u>NEOM.com</u> in 2023, when applications for next year will open.</p>
+          <div class="saudi-button">
+            <button class="saudi-buttonL"><i class="fa-solid fa-play"></i></button>
+            <button class="saudi-buttonR"><p>LEARN MORE</p></button>
+          </div>
+        </section>
+        <section class="saudiR">
+          <img src="./Assets/Image/img7.jpg" alt="">
+        </section>
+      </article>
+
+      <article class="footer">
+        <section class="news">
+          <div class="news-contents">Get news & updates</div>
+          <div class="news-contents">Sign up for the latest news on how we are shaping a new future.</div>
+          <div class="news-contents"><input type="email" name="" id="" placeholder="Email address"></div>
+        </section>
+        <section class="about-social">
+          <div class="about">
+            <section class="about-about">
+              <p>ABOUT</p>
+              <ul><li>ABOUT</li></ul>
+              <p>REGIONS</p>
+              <ul>
+                <li>OXAGON</li>
+                <li>
+                  TROJENA
+                </li>
+                <li>THE LINE</li>
+                </ul>
+            </section>
+            <section class="about-sectors">
+              <p>SECTORS</p>
+              <ul>
+                <ul>
+                  <li>Health, Well-being and Biotech</li>
+                  <li>Technology and Digital</li>
+                  <li>Energy</li>
+                  <li>Financial Services</li>
+                  <li>Mobility</li>
+                  <li>Sport</li>
+                  <li>Design and Construction</li>
+                </ul>
+                <ul>
+                  <li>Education</li>
+                  <li>Entertainment and Culture</li>
+                  <li>Food</li>
+                  <li>Manufacturing</li>
+                  <li>Media</li>
+                  <li>Tourism</li>
+                  <li>Water</li>
+                </ul>
+              </ul>
+            </section>
+            <section class="about-bepartofneom">
+              <p>BE PART OF NEOM</p>
+              <ul>
+                <li>Invest</li>
+                <li>Suppliers</li>
+                <li>Work</li>
+                <li>Partners</li>
+              </ul>
+            </section>
+          </div>
+          <hr>
+          <section class="social">
+            <div class="social-content">
+              <p>NEWS & SOCIAL</p>
+            </div>
+            <div class="social-content">
+              <p>News</p>
+              <p>Media Gallery</p>
+            </div>
+            <div class="social-content">
+              <img src="./Assets/Image/youtube-brands.svg" alt="">
+              <img src="./Assets/Image/square-facebook-brands.svg" alt="">
+              <img src="./Assets/Image/linkedin-brands.svg" alt="">
+              <img src="./Assets/Image/square-instagram-brands.svg" alt="">
+              <img src="./Assets/Image/square-snapchat-brands.svg" alt="">
+              <img src="./Assets/Image/tiktok-brands.svg" alt="">
+              <img src="./Assets/Image/square-twitter-brands.svg" alt="">
+            </div>
+        </section>
+        <section class="policy">
+          <span>Privacy poicy</span><span>Terms of Use</span><span>Cookie Policy</span><span>Crypto Disclaimer</span><span>© 2022 NEOM</span>
+        </section>
+      </article>
+      <button class="policy-btn"><i class="fa-solid fa-shield-cat fa-2x"></i></button>
+    </main>
   </body>
 </html>
