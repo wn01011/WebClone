@@ -1,209 +1,211 @@
-.director-header{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding :60px 30px;
+.director-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 30px;
 }
-.director-header .director-textL{
-    text-align: left;
+.director-header .director-textL {
+  text-align: left;
 }
-.director-header .director-textR{
-    text-align: right;
+.director-header .director-textR {
+  text-align: right;
 }
-.director-header div h3{
-    font-size: 0.9rem;
+.director-header div h3 {
+  font-size: 0.9rem;
 }
-.director-header div p{
-    font-size: 0.8rem;
-    color:rgb(112, 112, 112);
+.director-header div p {
+  font-size: 0.8rem;
+  color: rgb(112, 112, 112);
 }
-.description{
-    width: 50%;
-    display:flex;
-    flex-direction: column;
-    padding-left:60px;
-    padding-top:100px;
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 100px;
 }
-.directors{
-    position:relative;
-    display:block;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:200px;
+.directors {
+  background-color: rgb(240, 248, 255);
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
 }
-.directors> span:first-of-type{
-    width:80%;
-    height:100%;
-    margin-left:10%;
-    position:absolute;
-    background-color: beige;
-    padding-bottom:10px;
-    z-index: -1;
+.directors > span:first-of-type {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  position: absolute;
+  background-color: beige;
+  padding-bottom: 10px;
+  z-index: 0;
 }
 
-.director-main{
-    position:relative;
-    display:flex;
-    justify-content: space-between;
-    margin-bottom:60px;
+.director-main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 .director-main .directorL,
-.director-main .directorR
-{
-    width: 20%;
+.director-main .directorR {
+  width: 20%;
 }
-.director-main .directorL{
- transform:translateX(-60px);
+.director-main .directorL {
+  transform: translateX(-60px);
 }
-.director-main .directorR{
-    transform:translateX(60px);
+.director-main .directorR {
+  transform: translateX(60px);
 }
 .director-main .directorL button,
-.director-main .directorR button{
-    width:100%;
-    border:none;
-    color:#a88a27;
-    padding-top:40px;
+.director-main .directorR button {
+  width: 100%;
+  border: none;
+  color: #a88a27;
+  padding-top: 40px;
+  background-color: transparent;
 }
 
-.director-main .directorM{
-    display:flex;
-    gap:40px;
-    width:100%;
-    align-items: flex-end;
+.director-main .directorM {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  align-items: flex-end;
 }
-.director-main .directorM i{
-    color: #a88a27;
+.director-main .directorM i {
+  color: #a88a27;
 }
-.director-main .directorM img{
-    height: 600px;
-    scale: 1.2;
-    object-fit: cover;
-    transform:translateY(50px);
-    overflow-x: hidden;
-    padding-left:30px;
+.director-main .directorM img {
+  height: 600px;
+  scale: 1.2;
+  object-fit: cover;
+  transform: translateY(50px);
+  overflow-x: hidden;
+  padding-left: 30px;
 }
-.director-main .directorM h2{
-    letter-spacing: 0.1rem;
-    line-height: 1.8rem;
-    color:rgb(102, 101, 101);
-    font-weight: 400;
-    font-size:1.2rem;
+.director-main .directorM h2 {
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  color: rgb(102, 101, 101);
+  font-weight: 400;
+  font-size: 1.2rem;
 }
-.director-main .directorM h2> p:first-of-type{
-    font-weight: bold;
-    color: rgb(63, 63, 63);
+.director-main .directorM h2 > p:first-of-type {
+  font-weight: bold;
+  color: rgb(63, 63, 63);
 }
-.director-main .directorM h2> p:last-of-type{
-    color:rgb(150, 150, 150);
-    font-size:0.8rem;
+.director-main .directorM h2 > p:last-of-type {
+  color: rgb(150, 150, 150);
+  font-size: 0.8rem;
 }
-.director-main .directorM h2> button{
-    border-radius:30px;
-    width: 120px;
-    height: 40px;
-    background-color:#a88a27;
-    transition:background-color 0.5s;
-    border:none;
-    font-weight:bolder;
-    color:whitesmoke;
-    margin-bottom: 100px;
+.director-main .directorM h2 > button {
+  border-radius: 30px;
+  width: 120px;
+  height: 40px;
+  background-color: #a88a27;
+  transition: background-color 0.5s;
+  border: none;
+  font-weight: bolder;
+  color: whitesmoke;
+  margin-bottom: 100px;
 }
-.director-main .directorM h2> button i{
-    color:whitesmoke;
-    border:none;
+.director-main .directorM h2 > button i {
+  color: whitesmoke;
+  border: none;
 }
-.director-main .directorM h2> button:hover{
-    background-color:#dac277;
+.director-main .directorM h2 > button:hover {
+  background-color: #dac277;
 }
 .director-main .directorL img,
-.director-main .directorR img{
-    width:100%;
+.director-main .directorR img {
+  width: 100%;
 }
-.director-main .directorM img{
-    width: 50%;
+.director-main .directorM img {
+  width: 50%;
 }
-.directors> div:last-of-type{
-    width:100%;
-    height: 100px;
+.directors > div:last-of-type {
+  width: 100%;
+  height: 100px;
 }
-@media only screen and (max-width:1313px) {
-    .director-main .directorM{
-        flex-direction: column;
-        width:100%;
-        transform:translate(0,0);
-        padding:0;
-        align-items: center;
-        justify-content: center;
-    }
-    .director-main .directorM h2{
-        width:70%;
-    }
-    .director-textL,
-    .director-textR,
-    .directorL,
-    .directorR{
-        display:none;
-    }
-    .directors{
-        margin-bottom: 40px;
-    }
+@media only screen and (max-width: 1313px) {
+  .director-main .directorM {
+    flex-direction: column;
+    width: 100%;
+    transform: translate(0, 0);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .director-main .directorM h2 {
+    width: 70%;
+  }
+  .director-textL,
+  .director-textR,
+  .directorL,
+  .directorR {
+    display: none;
+  }
+  .directors {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+  }
 }
 .directorL,
-.director-textL{
-    animation-name:directorL-Anim;
-    animation-duration: 1s;
-    animation-delay:0.5s;
-    opacity: 0;
-    transform:translateX(-100px);
-    animation-fill-mode: forwards;
+.director-textL {
+  animation-name: directorL-Anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation-fill-mode: forwards;
 }
 .directorR,
-.director-textR{
-    animation-name:directorR-Anim;
-    animation-duration: 1s;
-    animation-delay:0.5s;
-    opacity: 0;
-    transform:translateX(100px);
-    animation-fill-mode: forwards;
+.director-textR {
+  animation-name: directorR-Anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateX(100px);
+  animation-fill-mode: forwards;
 }
-.directorM{
-    animation-name:directorM-Anim;
-    animation-duration: 1s;
-    animation-delay:0.5s;
-    opacity: 0;
-    transform:translateY(100px);
-    animation-fill-mode: forwards;
+.directorM {
+  animation-name: directorM-Anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateY(100px);
+  animation-fill-mode: forwards;
 }
 
 @keyframes directorL-Anim {
-    from{
-      opacity: 0;
-      transform:translateX(-100px);
-    }
-    to{
-      opacity: 1;
-      transform:translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 @keyframes directorR-Anim {
-    from{
-      opacity: 0;
-      transform:translateX(100px);
-    }
-    to{
-      opacity: 1;
-      transform:translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 @keyframes directorM-Anim {
-    from{
-      opacity: 0;
-      transform:translateY(100px);
-    }
-    to{
-      opacity: 1;
-      transform:translateY(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

@@ -1,200 +1,291 @@
-.footer{
-    background-color: rgb(34, 34, 34);
+.footer {
+  background-color: rgb(34, 34, 34);
 }
-hr{
-    background-color:rgba(233, 233, 233, 0.082);
-    width: 80%;
-    height: 2px;
-    text-align: center;
-    margin:auto;
-    border:none;
+hr {
+  background-color: rgba(233, 233, 233, 0.082);
+  width: 80%;
+  height: 2px;
+  text-align: center;
+  margin: auto;
+  border: none;
 }
-.news{
-    display:flex;
-    width:100%;
-    height: 60px;
-    padding-top:40px;
-    padding-bottom:40px;
-    padding-left:60px;
-    padding-right:60px;
-    background-color: rgb(247, 239, 229);
-    justify-content: space-between;
-    align-items: center;
-    border-bottom:5px solid #a88a27;
-}
-
-.news> .news-contents:nth-of-type(2){
-    font-size:0.8rem;
-}
-.news> .news-contents:nth-of-type(3) input{
-    position:relative;
-    font-size: 1rem;
-    padding:20px;
-    width: 360px;
-    border-radius: 30px;
-    
-}
-.news> .news-contents:nth-of-type(3) input::after{
-    content:"";
-    width:1000px;
-    height:1000px;
-    position:relative;
-    background-color: red;
-    z-index: 10000;
+.news {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(247, 239, 229);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid #a88a27;
 }
 
-.about{
-    display:flex;
-    width:100%;
-    gap:40px;
-    padding : 80px 60px;
-    color:aliceblue;
-    animation-name:footer-Anim;
-    animation-duration: 1s;
-    animation-delay:0.5s;
-    opacity: 0;
-    transform:translateX(100px);
-    animation-fill-mode: forwards;
+.news > .news-contents:nth-of-type(2) {
+  font-size: 0.8rem;
 }
-.about li{
-    list-style: none;
-    font-weight:200;
-    
+.news > .news-contents:nth-of-type(3) input {
+  position: relative;
+  font-size: 1rem;
+  padding: 20px;
+  width: 360px;
+  height: 60px;
+  border-radius: 30px;
 }
-.about ul{
-    gap: 20px;
+.news > .news-contents:nth-of-type(3) {
+  position: relative;
+}
+
+.news > .news-contents:nth-of-type(3)::after {
+  content: "SIGN UP";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  float: right;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(43, 43, 43);
+  position: absolute;
+  border-radius: 30px;
+  right: 5px;
+  top: 5px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.12rem;
+  white-space: nowrap;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  z-index: 10;
+}
+.news > .news-contents:nth-of-type(3):hover::after {
+  background-color: rgb(110, 110, 110);
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  padding: 80px 60px;
+  color: aliceblue;
+  animation-name: footer-Anim;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  opacity: 0;
+  transform: translateX(100px);
+  animation-fill-mode: forwards;
+}
+.about li {
+  list-style: none;
+  font-weight: 200;
+}
+.about ul {
+  gap: 20px;
 }
 .about p {
-    font-size:1.5rem;
+  font-size: 1.5rem;
 }
-.about .about-about{
-    width:25%;
+.about .about-about {
+  width: 25%;
 }
-.about .about-about> ul{
+.about .about-about > ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.about .about-about > p + ul,
+.about .about-sectors > p + ul,
+.about .about-bepartofneom > p + ul {
+  margin-top: 40px;
+}
+.about .about-sectors {
+  width: 50%;
+  padding-right: 40px;
+}
+.about .about-sectors > ul {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  width: 100%;
+}
+.about .about-sectors > p + ul {
+  margin-top: 40px;
+}
+.about .about-sectors > ul > ul {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-bepartofneom {
+  width: 25%;
+}
+.about .about-bepartofneom > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.social {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: center;
+  margin: 60px 60px 60px 60px;
+  color: aliceblue;
+}
+.social .social-content:nth-last-of-type(1) {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  width: 40%;
+  height: 30px;
+}
+.social .social-content:nth-last-of-type(1) i {
+  color: #a88a27;
+}
+.social .social-content:nth-last-of-type(2) {
+  width: 30%;
+}
+.social .social-content:nth-last-of-type(2) > span {
+  padding-right: 20px;
+  font-size: 1rem;
+}
+.social .social-content:nth-last-of-type(3) {
+  width: 25%;
+  font-size: 1.6rem;
+}
+.social-content:nth-last-of-type(3) img {
+  width: 50%;
+}
+
+.policy {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+  padding: 10px 60px;
+  background-color: rgb(15, 15, 15);
+  width: 100%;
+  color: aliceblue;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.policy .dot {
+  color: #a88a27;
+  font-size: 0.5rem;
+}
+.policy button {
+  background-color: transparent;
+  color: rgba(240, 248, 255, 0.623);
+  border: none;
+  transition-duration: 0.3s;
+  white-space: nowrap;
+}
+.policy button:hover {
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.invisible {
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+  display: none;
+}
+.invisible button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.invisible button i {
+  padding: 10px;
+  transition-duration: 0.2s;
+  border: none;
+  border-radius: 50%;
+  transition-property: background-color;
+}
+.invisible button i:hover {
+  background-color: rgba(128, 128, 128, 0.342);
+}
+.invisible button > span {
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 780px) {
+  .news {
+    flex-direction: column;
+    height: 180px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .news > .news-contents:nth-of-type(3) {
+    width: 100%;
+  }
+  .footer .news > .news-contents:nth-of-type(3) input {
+    width: 100%;
+  }
+  .footer .about-social .about .about-about ul,
+  .footer .about-social .about .about-sectors ul,
+  .footer .about-social .about .about-bepartofneom ul {
+    display: none;
+  }
+  .about {
+    display: none;
+    flex-direction: column;
+  }
+  .about .about-about,
+  .about .about-sectors,
+  .about .about-bepartofneom {
+    width: 100%;
+    padding-right: 0;
+  }
+  .about .about-about p {
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.199);
+  }
+  .about section p {
+    white-space: nowrap;
+    width: 100%;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.199);
+  }
+  .social > div:nth-of-type(1),
+  .social > div:nth-of-type(2) {
+    display: none;
+  }
+  .social > div:nth-of-type(3) {
+    justify-content: space-between;
+  }
+  .policy {
+    gap: 10px;
+  }
+  .about-about,
+  .about-sectors,
+  .about-bepartofneom {
+    display: none;
+  }
+  .invisible {
     display: flex;
     flex-direction: column;
-    margin-bottom:60px;
-}
-.about .about-about> p+ul,
-.about .about-sectors> p+ul,
-.about .about-bepartofneom> p+ul{
-    margin-top:40px;
-}
-.about .about-sectors{
-    width:50%;
-}
-.about .about-sectors> ul{
-    display:flex;
-    gap:40px;
-}
-.about .about-sectors> p+ul{
-    margin-top:40px;
-}
-.about .about-sectors> ul> ul{
-    display:flex;
-    flex-direction: column;
-}
-.about .about-bepartofneom{
-    width:25%;
-}
-.about .about-bepartofneom> ul{
-    display:flex;
-    flex-direction: column;
-}
-
-
-.social{
-    display:flex;
-    width:100%;
-    justify-content: left;
-    align-items: center;
-    margin: 60px 60px 60px 60px;
-}
-.social .social-content:nth-last-of-type(1){
-    display:flex;
-    justify-content: center;
-    gap: 20px;
-    width:50%;
-    height:30px;
-    
-}
-.social .social-content:nth-last-of-type(1) img{
-    color:#a88a27;
-}
-.social .social-content:nth-last-of-type(2){
-    width:20%;
-}
-.social .social-content:nth-last-of-type(3){
-    width: 20%;
-}
-.social-content:nth-last-of-type(3) img{
-    width: 100%;
-}
-
-.policy{
-    display:flex;
-    justify-content: left;
-    align-items: center;
-    gap:20px;
-    height: 100px;
-    padding: 10px 60px; 
-    background-color: rgb(15, 15, 15);
-    width:100%;
-    color:aliceblue;
-    font-size:0.8rem;
-}
-@media only screen and (max-width:780px){
-    .news{
-        flex-direction: column;
-        height: 180px;
-        gap: 10px;
-        align-items: flex-start;
-    }
-    .news> .news-contents:nth-of-type(3){
-        width:100%;
-    }
-    .footer .news> .news-contents:nth-of-type(3) input{
-        width: 100%;
-    }
-    .footer .about-social .about .about-about ul,
-    .footer .about-social .about .about-sectors ul,
-    .footer .about-social .about .about-bepartofneom ul{
-        display:none;
-    }
-    .about{
-        flex-direction: column;
-    }
-    .about .about-about,
-    .about .about-sectors,
-    .about .about-bepartofneom{
-        width: 100%;
-    }
-    .about .about-about p{
-        width: 100%;
-        margin-top: 40px;
-        border-bottom: 1px solid #a88a27;
-    }
-    .about section p{
-        white-space: nowrap;
-        width: 100%;
-        border-bottom: 1px solid #a88a27;
-    }
-    .social> div:nth-of-type(1),
-    .social> div:nth-of-type(2){
-        display:none;
-    }
-    .social> div:nth-of-type(3){
-        justify-content: space-between;
-    }
-    
+    height: 40%;
+  }
+  .invisible button {
+    background-color: transparent;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.199);
+  }
 }
 @keyframes footer-Anim {
-    from{
-      opacity: 0;
-      transform:translateX(100px);
-    }
-    to{
-      opacity: 1;
-      transform:translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

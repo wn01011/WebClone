@@ -1,87 +1,89 @@
-.nature{
-    position:relative;
-    width:100%;
+.nature {
+  position: relative;
+  width: 100%;
 }
-.nature .background{
-    background-image: url(../Image/nature.jpg);
-    height:100%;
-    object-fit:contain;
-    position: absolute;
-    background-repeat: no-repeat;
-    width:100%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
-    overflow: hidden;
-    margin:auto;
+.nature .background {
+  position: fixed;
+  display: block;
+  background-image: url(../Image/nature.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  float: left;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  margin: auto;
 }
-.nature-contents{
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin: 60px;
-    margin-left:150px;
-    gap: 40px;
-    color:white;
-    min-height:600px;
-    animation-name:nature-Anim;
-    animation-duration: 1s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+.nature-contents {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 60px;
+  margin-left: 150px;
+  gap: 40px;
+  color: white;
+  min-height: 600px;
+  animation-name: nature-Anim;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 @keyframes nature-Anim {
-    from{
-      opacity: 0;
-      transform:translateY(100px);
-    }
-    to{
-      opacity: 1;
-      transform:translateY(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(100px);
   }
-.nature-contents h3{
-    font-size:0.9rem;
-    letter-spacing: 0.1rem;
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-.nature-contents h1{
-    font-size:2rem;
-    width:50%;
-    letter-spacing: 0.2rem;
-    line-height: 3rem;
-    min-width:350px;
+.nature-contents h3 {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
 }
-.nature-contents p{
-    font-size:1.2rem;
-    letter-spacing:0.1rem;
-    width:70%;
-    min-width: 300px;
+.nature-contents h1 {
+  font-size: 2rem;
+  width: 50%;
+  letter-spacing: 0.2rem;
+  line-height: 3rem;
+  min-width: 350px;
 }
-.nature-contents .nature-title-button{
-    min-width:350px;
+.nature-contents p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  width: 70%;
+  min-width: 300px;
 }
-.nature-contents .nature-title-button button{
-    border:none;
-    transition: background-color 0.4s;
+.nature-contents .nature-title-button {
+  min-width: 350px;
 }
-.nature-contents .nature-title-button button:hover{
-    background-color: #ebc038; 
-    color:white;
+.nature-contents .nature-title-button button {
+  border: none;
+  transition: background-color 0.4s;
 }
-.nature-contents .nature-title-button .nature-title-buttonL{
-    height:60px;
-    border-radius: 50%;
-    width: 60px;
+.nature-contents .nature-title-button button:hover {
+  background-color: #ebc038;
+  color: white;
 }
-.nature-contents .nature-title-button .nature-title-buttonR{
-    height: 60px;
-    border-radius: 30px;
-    width: 250px;
-    margin-left: 15px;
+.nature-contents .nature-title-button .nature-title-buttonL {
+  height: 60px;
+  border-radius: 50%;
+  width: 60px;
 }
-.nature-contents .nature-title-button .nature-title-buttonR p{
-    min-width: 250px;
-    margin:auto;
+.nature-contents .nature-title-button .nature-title-buttonR {
+  height: 60px;
+  border-radius: 30px;
+  width: 250px;
+  margin-left: 15px;
+}
+.nature-contents .nature-title-button .nature-title-buttonR p {
+  min-width: 250px;
+  margin: auto;
 }

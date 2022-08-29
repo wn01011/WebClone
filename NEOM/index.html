@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./Assets/CSS/SaudiTalent.css" />
     <link rel="stylesheet" href="./Assets/CSS/footer.css" />
     <link rel="stylesheet" href="./Assets/CSS/etc.css" />
+    <link rel="stylesheet" href="./Assets/CSS/nav.css" />
     <script
       src="https://kit.fontawesome.com/0c7c810305.js"
       crossorigin="anonymous"
@@ -47,10 +48,11 @@
         <i class="fa-solid fa-bars fa-2x"></i>
       </button>
     </header>
+    <nav class="hambergerfilm">
+
+    </nav>
 
     <main>
-
-      
       <article class="main-video">
         <div class="film"></div>
         <video src="./Assets/Video/forest.mp4" autoplay muted loop></video>
@@ -196,11 +198,18 @@
         </section>
       </article>
 
-      <article class="footer">
+      <footer class="footer">
         <section class="news">
           <div class="news-contents">Get news & updates</div>
           <div class="news-contents">Sign up for the latest news on how we are shaping a new future.</div>
           <div class="news-contents"><input type="email" name="" id="" placeholder="Email address"></div>
+        </section>
+        <section class="invisible">
+          <button><span>ABOUT</span><span><i class="fa-solid fa-chevron-down"></i></span></button>
+          <button><span>REGIONS</span><span><i class="fa-solid fa-chevron-down"></i></span></button>
+          <button><span>SECTORS</span><span><i class="fa-solid fa-chevron-down"></i></span></button>
+          <button><span>BE PART OF NEOM</span><span><i class="fa-solid fa-chevron-down"></i></span></button>
+          <button><span>NEWS & SOCIAL</span><span><i class="fa-solid fa-chevron-down"></i></span></button>
         </section>
         <section class="about-social">
           <div class="about">
@@ -255,23 +264,24 @@
               <p>NEWS & SOCIAL</p>
             </div>
             <div class="social-content">
-              <p>News</p>
-              <p>Media Gallery</p>
+              <span>News</span>
+              <span>Media Gallery</span>
             </div>
             <div class="social-content">
-              <img src="./Assets/Image/youtube-brands.svg" alt="">
-              <img src="./Assets/Image/square-facebook-brands.svg" alt="">
-              <img src="./Assets/Image/linkedin-brands.svg" alt="">
-              <img src="./Assets/Image/square-instagram-brands.svg" alt="">
-              <img src="./Assets/Image/square-snapchat-brands.svg" alt="">
-              <img src="./Assets/Image/tiktok-brands.svg" alt="">
-              <img src="./Assets/Image/square-twitter-brands.svg" alt="">
+              <i class="fa-brands fa-youtube fa-2x"></i>
+              <i class="fa-brands fa-square-facebook fa-2x"></i>
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+              <i class="fa-brands fa-square-instagram fa-2x"></i>
+              <i class="fa-brands fa-square-snapchat fa-2x"></i>
+              <i class="fa-brands fa-tiktok fa-2x"></i>
+              <i class="fa-brands fa-square-twitter fa-2x"></i>
             </div>
         </section>
         <section class="policy">
-          <span>Privacy poicy</span><span>Terms of Use</span><span>Cookie Policy</span><span>Crypto Disclaimer</span><span>© 2022 NEOM</span>
+          <button>Privacy poicy</button><span class="dot">●</span><button>Terms of Use</button><span class="dot">●</span><button>Cookie Policy</button><span class="dot">●</span><button>Crypto Disclaimer</button><span class="dot">●</span><span>© 2022 NEOM</span>
         </section>
-      </article>
+      </footer>
+      
       <button class="policy-btn"><i class="fa-solid fa-shield-cat fa-2x"></i></button>
     </main>
   </body>

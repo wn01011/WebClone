@@ -1,0 +1,44 @@
+.neom-is-a-vision {
+  height: 800px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.background {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Image/contourline.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  filter: grayscale(0.9);
+  z-index: -1;
+}
+.neom-is-a-vision h2,
+.neom-is-a-vision h1,
+.neom-is-a-vision p {
+  width: 80%;
+  max-width: 700px;
+  min-width: 300px;
+  z-index: 1;
+}
+.neom-is-a-vision h2 {
+  font-size: 1rem;
+  color: #a88a27;
+}
+.neom-is-a-vision h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0.3rem;
+}
+.neom-is-a-vision p {
+  font-size: 1.3rem;
+  font-weight: 200;
+  line-height: 2.5rem;
+}

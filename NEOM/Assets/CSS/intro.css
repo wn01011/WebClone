@@ -1,25 +1,25 @@
-.intro{
+.intro {
   background-color: whitesmoke;
-  margin-top: 100px;
+  padding-top: 100px;
   text-align: center;
 }
-.intro-text1{
-  font-size:clamp(28px, calc(28px + 22*(100vw - 480px)/960) ,50px);
-  line-height:clamp(143%,calc(143% + -23*(100vw - 480px)/960),120%);
+.intro-text1 {
+  font-size: clamp(28px, calc(28px + 22 * (100vw - 480px) / 960), 50px);
+  line-height: clamp(143%, calc(143% + -23 * (100vw - 480px) / 960), 120%);
   letter-spacing: 0.3rem;
-  font-weight:600;
+  font-weight: 600;
   animation-delay: 0.5s;
 }
-.intro-text2{
-  font-size:clamp(28px, calc(28px + 22*(100vw - 480px)/960) ,50px);
-  line-height:clamp(143%,calc(143% + -23*(100vw - 480px)/960),120%);
+.intro-text2 {
+  font-size: clamp(28px, calc(28px + 22 * (100vw - 480px) / 960), 50px);
+  line-height: clamp(143%, calc(143% + -23 * (100vw - 480px) / 960), 120%);
   letter-spacing: 0.3rem;
-  font-weight:400;
+  font-weight: 400;
   animation-delay: 0s;
 }
 .intro-text1,
-.intro-text2{
-  animation-name:intro-text-Anim;
+.intro-text2 {
+  animation-name: intro-text-Anim;
   animation-duration: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -29,97 +29,98 @@
 .intro .intro-imgs .intro-imgs-img:nth-of-type(3),
 .intro .intro-imgs .intro-imgs-img:nth-of-type(4),
 .intro .intro-imgs .intro-imgs-img:nth-of-type(5),
-.intro .intro-imgs .intro-imgs-img:nth-of-type(6){
-  animation-name:intro-text-Anim;
+.intro .intro-imgs .intro-imgs-img:nth-of-type(6) {
+  animation-name: intro-text-Anim;
   animation-duration: 1s;
-  opacity:0;
+  opacity: 0;
   animation-fill-mode: forwards;
 }
-.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(1){
-  animation-delay:1s;
+.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(1) {
+  animation-delay: 1s;
 }
-.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(2){
-  animation-delay:1.3s;
+.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(2) {
+  animation-delay: 1.3s;
 }
-.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(3){
-  animation-delay:1.6s;
+.intro .intro-imgs .intro-imgsL .intro-imgs-img:nth-of-type(3) {
+  animation-delay: 1.6s;
 }
-.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(1){
-  animation-delay:1.6s;
+.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(1) {
+  animation-delay: 1.6s;
 }
-.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(2){
-  animation-delay:1.9s;
+.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(2) {
+  animation-delay: 1.9s;
 }
-.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(3){
-  animation-delay:2.2s;
+.intro .intro-imgs .intro-imgsR .intro-imgs-img:nth-of-type(3) {
+  animation-delay: 2.2s;
 }
 @keyframes intro-text-Anim {
-  from{
+  from {
     opacity: 0;
-    transform:translateY(100px);
+    transform: translateY(100px);
   }
-  to{
+  to {
     opacity: 1;
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
 }
-.intro .intro-imgs{
-  display:flex;
+.intro .intro-imgs {
+  display: flex;
   justify-content: center;
-  gap:60px;
+  gap: 60px;
   max-width: 910px;
-  height:auto;
+  height: auto;
   padding: 60px;
-  margin:auto;
+  margin: auto;
 }
-.intro-imgs-img img{
+.intro-imgs-img img {
   width: 100%;
 }
 .intro-imgsL,
-.intro-imgsR{
-  display:flex;
+.intro-imgsR {
+  display: flex;
   flex-direction: column;
-  width:50%;
-  height:auto;
+  width: 50%;
+  height: auto;
   justify-content: space-between;
   align-items: center;
-  gap:70px;
+  gap: 70px;
   text-align: left;
 }
-.intro-imgs-img p{
-  margin-top : 30px;
+.intro-imgs-img p {
+  margin-top: 30px;
   margin-bottom: 30px;
   text-decoration: none;
   line-height: 2rem;
 }
 /** read more */
-.read-more{
+.read-more {
   text-decoration: none;
   letter-spacing: 0.1rem;
-  transition:color 0.4s;
+  transition: color 0.4s;
 }
-.read-more:visited{
-  color:inherit;
+.read-more:visited,
+.read-more:link {
+  color: inherit;
 }
-.read-more:hover{
- color:#ebc038; 
+.read-more:hover {
+  color: #ebc038;
 }
 
 /* media query */
-@media only screen and (max-width:760px){
-  .intro .intro-imgs{
+@media only screen and (max-width: 760px) {
+  .intro .intro-imgs {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height:auto;
+    height: auto;
     gap: 40px;
   }
   .intro-imgsL,
-  .intro-imgsR{
+  .intro-imgsR {
     width: 80%;
     height: auto;
     gap: 40px;
-    position:relative;
-    top:0px;
-}
+    position: relative;
+    top: 0px;
+  }
 }

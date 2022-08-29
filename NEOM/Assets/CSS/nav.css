@@ -1,0 +1,14 @@
+.hamberger {
+  transition-duration: 1s;
+}
+.hambergerfilm {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 0;
+  display: none;
+}
+.hamberger:hover {
+  transform: rotateZ(90deg);
+}

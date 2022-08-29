@@ -1,0 +1,74 @@
+.main-video-container {
+  position: relative;
+  display: flex;
+}
+.main-video-container video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(70%);
+  object-fit: cover;
+  top: 0px;
+  z-index: 0;
+}
+.video-description {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 3;
+}
+
+.video-description .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px 0px 120px;
+}
+.video-description .buttons button {
+  width: 70px;
+  height: 70px;
+  border: 1px solid aliceblue;
+  color: aliceblue;
+  border-radius: 50%;
+  background-color: transparent;
+  transition-duration: 0.3s;
+}
+.video-description .buttons button:hover {
+  background-color: #ebc038;
+  border: none;
+}
+
+.this-is-neon {
+  height: calc(50% - 70px);
+  min-height: 350px;
+  padding-top: 100px;
+  display: flex;
+  width: 100vw;
+  align-items: left;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 120px;
+}
+.this-is-neon h1 {
+  height: 50%;
+  font-size: 3.5rem;
+  color: aliceblue;
+  letter-spacing: 0.7rem;
+}
+.this-is-neon button {
+  height: 60px;
+  width: 250px;
+  border-radius: 30px;
+  border: none;
+  transition-duration: 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+}
+.this-is-neon button:hover {
+  background-color: #ebc038;
+}

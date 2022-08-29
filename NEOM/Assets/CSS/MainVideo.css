@@ -4,29 +4,31 @@
   object-fit: cover;
   position: absolute;
   opacity: 1;
-  filter:brightness(70%);
+  filter: brightness(70%);
   transform-origin: 0 0;
 }
-.film{
-  position:absolute;
+.film {
+  position: absolute;
   background-color: rgb(20, 20, 20);
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 1;
-  left:100%;
+  left: 100%;
   animation: left 1s;
-  animation-name:videoAnim;
+  animation-name: videoAnim;
   transform-origin: 0 0;
   animation-fill-mode: forwards;
   z-index: 1;
+  transition-delay: 1s;
+  transition-property: left;
 }
-@keyframes videoAnim{
-  from{
-    left:0%;
+@keyframes videoAnim {
+  from {
+    left: 0%;
   }
-  to{
-    left:100%;
+  to {
+    left: 100%;
   }
 }
 
@@ -34,27 +36,30 @@
   display: flex;
   height: 100%;
   justify-content: space-between;
-  background-color:gray;
-
+  background-color: gray;
+  align-items: center;
 }
 .videoL,
 .videoR {
   width: 50%;
-  transform:translateY(100px);
-  animation-name:videoLAnim;
+  height: 30%;
+  max-height: 100px;
+  transform: translateY(100px);
+  animation-name: videoLAnim;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
+  z-index: 2;
 }
-.videoL{
+.videoL {
   animation-delay: 1s;
 }
-.videoR{
+.videoR {
   animation-delay: 1.3s;
 }
-.video-title{
-  transform:translateY(100px);
-  animation-name:videoLAnim;
+.video-title {
+  transform: translateY(100px);
+  animation-name: videoLAnim;
   animation-delay: 1.5s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -66,16 +71,15 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 40px;
-  
 }
 @keyframes videoLAnim {
-  from{
+  from {
     opacity: 0;
-    transform:translateY(100px);
+    transform: translateY(100px);
   }
-  to{
+  to {
     opacity: 1;
-    transform:translateY(0px);
+    transform: translateY(0px);
   }
 }
 .videoR {
@@ -91,81 +95,84 @@
   height: 60px;
   background-color: transparent;
   border-radius: 50%;
-  color:  white;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
   border-color: white;
   z-index: 100;
   transition: border, background-color 0.4s;
 }
 .videoR .videoBtn:hover,
-.videoL .videoBtn:hover{
-  border:none;
+.videoL .videoBtn:hover {
+  border: none;
   background-color: #ebc038;
 }
-.video-title{
-  position:absolute;
-  display:flex;
+.video-title {
+  position: absolute;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  bottom : 0px;
+  bottom: 0px;
   padding: 60px;
   padding-left: 100px;
   width: 100%;
   height: 100%;
   min-height: 457px;
   line-height: 200%;
-  color:white;
+  color: white;
   letter-spacing: 0.5rem;
   gap: 60px;
 }
-.video-title h2{
+.video-title h2 {
   height: 20%;
-  font-size: clamp(28px,calc(28px + 22*(100vw - 480px)/960),50px);
-  line-height: clamp(143%,calc(143% + -23*(100vw - 480px)/960),120%);
+  font-size: clamp(28px, calc(28px + 22 * (100vw - 480px) / 960), 50px);
+  line-height: clamp(143%, calc(143% + -23 * (100vw - 480px) / 960), 120%);
 }
-.video-title-button{
-  display:flex;
+.video-title-button {
+  display: flex;
   flex-direction: row;
   gap: 20px;
+  z-index: 3;
 }
-.video-title-button button{
-  border:none;
-  background-color:white;
-  border-radius:50%;
-  transition:background-color 0.4s;
+.video-title-button button {
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color 0.4s;
 }
 
-.video-title-button .video-title-buttonL{
-  min-width:60px;
+.video-title-button .video-title-buttonL {
+  min-width: 60px;
   width: 60px;
   height: 60px;
 }
-.video-title-button .video-title-buttonR{
-  min-width:180px;
+.video-title-button .video-title-buttonR {
+  min-width: 180px;
   width: 180px;
   height: 60px;
   border-radius: 30px;
   font-weight: 600;
   letter-spacing: 0.15rem;
 }
-.video-title-button button:hover{
+.video-title-button button:hover {
   background-color: #ebc038;
-  color:white;
+  color: white;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .videoR .videoBtn,
-  .videoL .videoBtn{
-    display:none;
+  .videoL .videoBtn {
+    display: none;
   }
-  .video-title-button .video-title-buttonR{
-    width : calc(100% - 60px);
+  .video-title-button .video-title-buttonR {
+    width: calc(100% - 60px);
   }
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 380px) {
   .video-title-button {
     flex-direction: column;
   }
-  .video-title-button .video-title-buttonR{
+  .video-title-button .video-title-buttonR {
     width: 100%;
   }
 }
