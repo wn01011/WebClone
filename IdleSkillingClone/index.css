@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100%;
+}
+#trainView {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#menubar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#menuLeft {
+  display: flex;
+  width: 57%;
+}
+#menuRight {
+  display: flex;
+  justify-content: end;
+  width: 35%;
+}
+.menuBtn {
+  width: 60px;
+  height: 100%;
+  margin: 2% 1%;
+}
+
+.menuBtn img {
+  width: 100%;
+  height: 100%;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 80px;
+  max-width: 80px;
+}
+#statistics {
+  width: 5%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: end;
+}
+#statistics img {
+  width: 100%;
+  height: 100%;
+}
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#background img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#upperView {
+  width: 100%;
+  height: 100%;
+}
+.trainers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.trainers div {
+  width: 100%;
+}
+.trainers img {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+.trainers img::after {
+  position: absolute;
+  content: "";
+}
+.upgrades {
+  display: flex;
+  height: 20%;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.upgradeBtns {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.upgradeBtns button {
+  height: 100%;
+}
+#downView {
+  height: 100%;
+}
+#menubar .focus {
+  border: 0px transparent solid;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px white;
+}
+#menubar .iconSel {
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 5px 5px white;
+}
+
+#fightView {
+  width: 100%;
+  height: 100%;
+}
+#fightView main {
+  padding-top: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#fightLevelBox {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+#imgBox {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 40%;
+}
+#stageInfo {
+  width: 40%;
+}
+#fightLevelBox img {
+  width: 50%;
+}
+#monsterImg {
+  width: 40%;
+}
+.fightLevelBoxBox {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.fightLevelBoxBox img {
+  object-fit: contain;
+}
+.fightLevelBoxBox p {
+  display: flex;
+  align-items: center;
+}
+.fightLevelText {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  overflow-wrap: normal;
+  height: 10%;
+}
+#hpBar {
+  margin: 15% 5%;
+  margin-bottom: 0;
+  width: 140%;
+  height: 3%;
+  border: black 5px solid;
+  background: linear-gradient(
+    to bottom,
+    rgb(1, 80, 1),
+    lightgreen,
+    green,
+    green,
+    rgb(0, 49, 0)
+  );
+}
+#foodBox {
+  margin-top: 5%;
+  height: 5%;
+  display: flex;
+  margin-left: 5%;
+  column-gap: 10px;
+}
+#foodBox img {
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgb(247, 194, 202);
+  box-shadow: inset 0px 0px 5px 5px rgb(245, 96, 80);
+}
+#currencyBox {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#coinBox,
+#gemBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+#coinBox img,
+#gemBox img {
+  width: 30%;
+}
